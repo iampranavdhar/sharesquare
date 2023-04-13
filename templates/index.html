@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>File Sharing App</title>
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+    />
+    <script>
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute("href")).scrollIntoView({
+            behavior: "smooth",
+          });
+        });
+      });
+    </script>
+  </head>
+  <body class="landing_page">
+    <div class="navbar">
+      <div class="navbar-inner">
+        <div class="logo">
+          <img src="/static/images/logo.svg" alt="logo" class="logo" />
+          <h1 class="logo_text">ShareSquare</h1>
+        </div>
+        <div class="right-navigations">
+          <ul>
+            <li><a href="/share">Share</a></li>
+            <li><a href="/login">Contact</a></li>
+            <li><a href="/register">Footer</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="landing_page_content">
+      <div class="landing_page_text">
+        <h1 class="title">File Fiesta - Where Sharing is Caring and Fun!</h1>
+        <h2 class="description">
+          Join the Party and Share Your Files with the World (Or Just Your
+          Friends)
+        </h2>
+        <a href="#share" class="btn">Start sharing</a>
+      </div>
+      <div class="process">
+        <h2 class="process_heading">How it works</h2>
+        <div class="process_steps">
+          <div class="process_item">
+            <div class="image_div">
+              <img src="/static/images/upload.svg" alt="upload" />
+            </div>
+            <div>
+              <h3>Upload</h3>
+              <p>
+                Upload your files to our servers and we will give you a unique
+                link to share with your friends.
+              </p>
+            </div>
+          </div>
+          <div class="process_item">
+            <div class="image_div">
+              <img src="/static/images/share.svg" alt="share" />
+            </div>
+            <div>
+              <h3>Share</h3>
+              <p>
+                Share the link with your friends and they can download the file
+                from our servers.
+              </p>
+            </div>
+          </div>
+          <div class="process_item">
+            <div class="image_div">
+              <img src="/static/images/download.svg" alt="download" />
+            </div>
+            <div>
+              <h3>Download</h3>
+              <p>
+                Your friends can download the file from our servers and you can
+                track the downloads.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="sharing" id="share">
+        <div class="header">
+          <h2 class="sharing_heading">What are you waiting for?</h2>
+          <p>Start sharing</p>
+        </div>
+        <form method="POST" action="/share" enctype="multipart/form-data">
+          <label for="email" class="email_label">Recipient Email</label>
+          <input type="email" id="email" name="email" required /><br /><br />
+          <label for="file">File to share:</label>
+          <input type="file" id="file" name="file" required /><br /><br />
+          <input type="submit" value="Start sharing" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

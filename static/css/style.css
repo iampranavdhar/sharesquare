@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing_page {
+  background-color: #f5f5f5;
+  background-image: linear-gradient(90deg, #dbdbde30 1px, transparent 0),
+    linear-gradient(180deg, #dbdbde30 1px, transparent 0);
+  background-size: 25px 25px;
+  font-family: "Poppins", sans-serif;
+}
+
+.landing_page a {
+  scroll-behavior: smooth;
+}
+
+.landing_page_content {
+  width: 100%;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar-inner {
+  max-width: 1024px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  margin-right: 0.5rem;
+}
+
+.navbar-inner .logo_text {
+  font-size: 24px;
+  font-weight: 700;
+  color: #242424;
+  text-decoration: none;
+}
+
+.right-navigations ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.right-navigations ul li {
+  margin-left: 20px;
+}
+
+.right-navigations ul li a {
+  text-decoration: none;
+  color: #242424;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.right-navigations ul li a:hover {
+  color: #7209b7;
+}
+
+.landing_page_text {
+  width: 100%;
+  height: 100%;
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing_page_text .title {
+  font-size: 5rem;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 20px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.landing_page_text .description {
+  font-size: 16px;
+  font-weight: 400;
+  color: #242424;
+  margin-bottom: 20px;
+  max-width: 800px;
+}
+
+.btn {
+  background-color: #7209b7;
+  color: #fff !important;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  font-size: 16px;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 1rem 0.5rem;
+}
+
+.btn:hover {
+  color: #fff !important;
+  background-color: #5a08a3;
+}
+
+.process {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.process_heading {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 10rem;
+  max-width: 700px;
+  text-align: center;
+}
+
+.process_steps {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0 auto;
+}
+
+.process_item {
+  display: flex;
+  margin-bottom: 7rem;
+}
+
+.process_item h3 {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.image_div {
+  width: 5rem;
+  height: 5rem;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eeeeee;
+  border-radius: 1rem;
+  margin-right: 3rem;
+}
+
+.sharing {
+  width: 100%;
+  height: 100%;
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.sharing .header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.email_label {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #242424;
+  margin-bottom: 1rem;
+}
+
+input[type="email"] {
+  width: 100%;
+  max-width: 400px;
+  height: 3rem;
+  border: 1px solid #ededed;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #242424;
+  margin-bottom: 1rem;
+}
+
+input[type="email"]:focus {
+  outline: none;
+  border: 1px solid #7209b7;
+}
+
+input[type="email"]::placeholder {
+  color: #242424;
+}
+
+input[type="submit"] {
+  width: 100%;
+  max-width: 400px;
+  height: 4rem;
+  border: 1px solid #ededed;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #242424;
+  margin-bottom: 1rem;
+  background-color: #7209b7;
+  color: #fff;
+}
+
+input[type="submit"]:focus {
+  outline: none;
+  border: 1px solid #7209b7;
+}
+
+input[type="submit"]::placeholder {
+  color: #242424;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+input[type="submit"]:hover {
+  background-color: #5a08a3;
+}
