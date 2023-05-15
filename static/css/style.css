@@ -213,15 +213,16 @@ input[type="email"]::placeholder {
 
 input[type="submit"] {
   width: 100%;
-  max-width: 400px;
-  height: 4rem;
+  max-width: 100px;
+  height: 3rem;
   border: 1px solid #ededed;
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
   font-weight: 400;
   color: #242424;
   margin-bottom: 1rem;
+  margin-left: 1rem;
   background-color: #7209b7;
   color: #fff;
 }
@@ -239,4 +240,208 @@ input[type="submit"]::placeholder {
 
 input[type="submit"]:hover {
   background-color: #5a08a3;
+}
+
+/* Share Room CSS */
+body {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  font-family: "Comfortaa";
+  font-size: 15px;
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100vh;
+}
+
+.col-left {
+  flex: 65%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.col-right {
+  flex: 35%;
+  display: flex;
+  padding: 10px 0;
+  border-left: 1px solid #e9e9e9;
+  background-color: #fafafa;
+  align-items: center;
+  justify-content: center;
+}
+
+.right-box {
+  width: 100%;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.left-box {
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.roomcode-box {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+
+.roomcode-box p {
+  background-color: transparent;
+  border-radius: 5px;
+  color: #242424;
+  font-weight: 800;
+  font-size: 12px;
+  width: 10rem;
+}
+
+.roomcode-box > input {
+  margin: 5px 0;
+  padding: 5px;
+  border: 1px solid #e8e8e8;
+  background-color: transparent;
+  border-radius: 5px;
+  color: #242424;
+  font-weight: 800;
+  font-size: 12px;
+  width: 100%;
+}
+
+.roomcode-box > input:focus {
+  outline: none;
+  border: 1px solid #7209b7;
+}
+
+#fileinput {
+  cursor: pointer;
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border: 1px solid #324d5d;
+  flex: 1;
+  opacity: 0;
+}
+
+#drop_zone {
+  position: relative;
+  border: 5px dashed #324d5d;
+  width: 50vw;
+  height: 50vh;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+#sendFileBtn {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: aquamarine;
+  color: black;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #324d5d;
+  display: block;
+  margin: 5px;
+  width: 50%;
+  font-weight: bolder;
+}
+#sendFileBtn:hover {
+  background-color: greenyellow;
+}
+#drop_zone_text {
+  position: relative;
+  top: 0;
+  left: 0;
+  color: aquamarine;
+}
+.drop-area {
+}
+.fileprogress-box {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+}
+.progress {
+  margin-top: 5px;
+  font-size: 55px;
+  color: aquamarine;
+  font-weight: bold;
+}
+.progress-bar {
+  border: 1px solid #324d5d;
+}
+.progress-bar-fill {
+  background-color: aquamarine;
+  width: 0%;
+  height: 25px;
+}
+.stats-area {
+  display: none;
+  width: 50vw;
+}
+
+.info-box {
+  background-color: transparent;
+  border-radius: 0.25rem;
+  color: #242424;
+  font-size: 0.675rem;
+  padding: 1rem 1rem;
+  margin: 5px;
+}
+
+.info-box-header {
+  background-color: transparent;
+  border: 1px solid lightgray;
+  border-radius: 0.25rem;
+  color: #242424;
+  font-size: 0.675rem;
+  padding: 0.5rem 1rem;
+  margin: 5px;
+}
+
+.info-box-header h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  margin-bottom: 0.75rem;
+}
+
+#filename-text {
+  color: yellowgreen;
+}
+
+msglist > a {
+  font-size: 10px;
+  text-decoration: none;
+  color: lightcoral;
+  display: block;
+}
+
+msglist {
+  height: 100px;
+  overflow: scroll;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.emailform {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2rem;
 }
